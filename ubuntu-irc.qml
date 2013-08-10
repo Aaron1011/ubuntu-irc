@@ -22,7 +22,7 @@ MainView {
     height: units.gu(75)
 
     Page {
-        title: i18n.tr("Simple")
+        title: i18n.tr("IRC")
 
 
         TextArea {
