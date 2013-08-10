@@ -32,13 +32,6 @@ MainView {
                 fill: parent
             }
 
-            HelloComponent {
-                id: label
-                objectName: "label"
-
-                text: i18n.tr("Hello..")
-            }
-
             Button {
                 objectName: "button"
                 width: parent.width
