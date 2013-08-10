@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ubuntu-irc
+Comment=My project description
+Exec=/usr/bin/qmlscene $@ /usr/share/ubuntu-irc/ubuntu-irc.qml
+Icon=qmlscene
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
