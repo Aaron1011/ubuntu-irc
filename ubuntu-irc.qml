@@ -24,19 +24,20 @@ MainView {
     Page {
         title: i18n.tr("Simple")
 
-        Column {
-            spacing: units.gu(1)
+
+        TextArea {
             anchors {
-                margins: units.gu(2)
                 fill: parent
             }
 
-            TextField {
-                anchors {
-                    bottom: parent.bottom
-                    left: parent.left
-                    right: parent.right
-                }
+            readOnly: true
+        }
+
+        TextField {
+            width: parent.width - units.gu(2)
+            anchors {
+                bottom: parent.bottom
+                horizontalCenter: parent.horizontalCenter
             }
         }
     }
