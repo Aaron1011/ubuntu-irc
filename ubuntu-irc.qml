@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Ubuntu.Components 0.1
+import "js/inpututils.js" as InputUtils
 
 /*!
     \brief MainView with a Label and Button elements.
@@ -42,20 +43,8 @@ MainView {
             }
 
             onAccepted: {
-                processInput(text)
+                InputUtils.processInput(text)
             }
         }
     }
-    function processInput(input) {
-        commandInput.remove(0, commandInput.length)
-        if (input[0] == '/') {
-            processCommand(input.slice(1));
-        }
-        else {
-            processMessage(input);
-        }
-    }
-
-    function processCommand() {}
-    function processMessage() {}
 }
