@@ -39,6 +39,21 @@ MainView {
                 bottom: parent.bottom
                 horizontalCenter: parent.horizontalCenter
             }
+
+            onAccepted: {
+                processInput(text)
+            }
         }
     }
+    function processInput(input) {
+        if (input[0] == '/') {
+            processCommand(input.slice(1));
+        }
+        else {
+            processMessage(input);
+        }
+    }
+
+    function processCommand() {}
+    function processMessage() {}
 }
