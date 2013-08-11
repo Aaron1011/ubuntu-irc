@@ -34,6 +34,7 @@ MainView {
         }
 
         TextField {
+            id: commandInput
             width: parent.width - units.gu(2)
             anchors {
                 bottom: parent.bottom
@@ -46,6 +47,7 @@ MainView {
         }
     }
     function processInput(input) {
+        commandInput.remove(0, commandInput.length)
         if (input[0] == '/') {
             processCommand(input.slice(1));
         }
